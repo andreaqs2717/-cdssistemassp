@@ -3,13 +3,18 @@
 //use PDO;
 
 //class ProdutosControler extends BaseController {
-    function index() {
-        //$sucesso = $this->inserirCategoriasApi();
-        //$sucesso = $this->inserirProdutosApi();
-        //$sucesso = $this->atualizarProdutosApi();
-        //$sucesso = $this->getProdutosApi();
-         $sucesso = $this->conectar();
-    }
+
+   inicio();
+   
+   function inicio() { 
+      //echo 'dea';
+      //inserirCategoriasApi();
+      conectar();
+      //getProdutosApi();
+      //echo 'dea';
+      //inserirProdutosApi();
+      //atualizarProdutosApi();
+   }
     
     function conectar() {
       try 
