@@ -1,13 +1,14 @@
-<?php namespace App\Controllers;
+<?php;
 
 use PDO;
 
-class ProdutosControler extends BaseController {
+//class ProdutosControler extends BaseController {
     function index() {
-        $sucesso = $this->inserirCategoriasApi();
-        $sucesso = $this->inserirProdutosApi();
-        $sucesso = $this->atualizarProdutosApi();
+        //$sucesso = $this->inserirCategoriasApi();
+        //$sucesso = $this->inserirProdutosApi();
+        //$sucesso = $this->atualizarProdutosApi();
         //$sucesso = $this->getProdutosApi();
+         $sucesso = $this->conectar();
     }
     
     function conectar() {
@@ -493,5 +494,5 @@ class ProdutosControler extends BaseController {
         //sqlsrv_close($ConnConsulta);  
    }     
 
-}
+//}
 
